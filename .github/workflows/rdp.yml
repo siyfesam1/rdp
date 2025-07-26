@@ -27,7 +27,7 @@ jobs:
       run: |
         net user kamel007 kamel007 /add /Y
         net localgroup administrators kamel007 /add
-        reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList" /v kamel007 /t REG_DWORD /d 0 /f
+        
 
     - name: Start Ngrok and display connection info
       run: |
